@@ -1,0 +1,58 @@
+import React from "react";
+import "./Home.css";
+
+const Home = () => {
+  return (
+    <div className="container mx-auto">
+      {/* banner section */}
+      <div className="my-10 border-2 border-red-700 p-4 grid grid-cols-1 md:grid-cols-2 justify-evenly align-middle">
+        <div className="px-5 my-auto text-left">
+          <h1 className="text-6xl font-bold text-left">
+            Edifier Wireless{" "}
+            <span className="text-[#00cba9]">Bluetooth Headphone</span>
+          </h1>
+          <p className="text-xl mx-auto my-5 font-medium">
+            Headphone that make you feel the pure beat. Features like compact
+            fold-up design, adjustable headband and long lasting battery life
+            makes it the best choice.
+          </p>
+          <button className="mt-3 px-5 py-2 rounded-md bg-[#00cba9] text-white font-medium">
+            Buy Now
+          </button>
+        </div>
+        <div className="px-3 my-auto justify-center">
+          <img
+            src="https://gadgetnmusic.com/wp-content/uploads/2021/10/2021101513112716342746879424.png"
+            className="banner-img"
+            alt="logo"
+          />
+        </div>
+      </div>
+
+      {/* customer review section  */}
+      <div className="border-2 border-red-700 my-10 p-4">
+        <div className="justify-center my-10">
+          <h1 className="my-4 text-4xl font-bold text-center">
+            Customer Reviews
+          </h1>
+          <div className="my-10 grid grid-cols-3 gap-6">
+            <div className="bg-green-200">
+              <h3>Review 1</h3>
+            </div>
+            <div className="bg-green-200">
+              <h3>Review 1</h3>
+            </div>
+            <div className="bg-green-200">
+              <h3>Review 1</h3>
+            </div>
+          </div>
+          <button className="mt-3 px-3 py-2 rounded-md bg-[#00cba9] text-white font-medium">
+            See All Reviews
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
