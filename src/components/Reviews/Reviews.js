@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import useReviews from "../../hooks/useReviews";
 import Card from "../Card/Card";
 
 const Reviews = () => {
-  const [reviews, setreviews] = useState([]);
+  // using useReviews custom hook
+  const [reviews, setreviews] = useReviews();
 
   useEffect(() => {
     fetch("review.json")

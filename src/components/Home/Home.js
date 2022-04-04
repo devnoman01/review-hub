@@ -1,7 +1,12 @@
 import React from "react";
+import useReviews from "../../hooks/useReviews";
+import Card from "../Card/Card";
 import "./Home.css";
 
 const Home = () => {
+  const [reviews, setreviews] = useReviews();
+  const featuredReviews = reviews.slice(0, 3);
+
   return (
     <div className="container mx-auto">
       {/* banner section */}
@@ -33,17 +38,7 @@ const Home = () => {
       <div className=" my-10 p-4">
         <div className="justify-center my-10">
           <h1 className="my-4 text-4xl font-bold text-center">User Reviews</h1>
-          <div className="my-10 grid grid-cols-3 gap-6">
-            <div className="bg-green-200">
-              <h3>Review 1</h3>
-            </div>
-            <div className="bg-green-200">
-              <h3>Review 1</h3>
-            </div>
-            <div className="bg-green-200">
-              <h3>Review 1</h3>
-            </div>
-          </div>
+          <div className="my-10 grid grid-cols-3 gap-6"></div>
           <button className="mt-3 px-3 py-2 rounded-md bg-[#00cba9] text-white font-medium">
             See All Reviews
           </button>
