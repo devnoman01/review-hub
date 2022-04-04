@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="container mx-auto">
       {/* banner section */}
-      <div className="my-10 border-2 border-red-700 p-4 grid grid-cols-1 md:grid-cols-2 justify-evenly align-middle">
+      <div className="my-10 p-4 grid grid-cols-1 md:grid-cols-2 justify-evenly align-middle">
         <div className="px-5 my-auto text-left">
           <h1 className="text-6xl font-bold text-left">
             Edifier Wireless{" "}
@@ -30,11 +30,9 @@ const Home = () => {
       </div>
 
       {/* customer review section  */}
-      <div className="border-2 border-red-700 my-10 p-4">
+      <div className=" my-10 p-4">
         <div className="justify-center my-10">
-          <h1 className="my-4 text-4xl font-bold text-center">
-            Customer Reviews
-          </h1>
+          <h1 className="my-4 text-4xl font-bold text-center">User Reviews</h1>
           <div className="my-10 grid grid-cols-3 gap-6">
             <div className="bg-green-200">
               <h3>Review 1</h3>

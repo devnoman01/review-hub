@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="my-auto text-xl font-medium">
       {routes.map((route) => (
-        <Link className="ml-5" to={route.link}>
+        <Link key={route.id} className="ml-5" to={route.link}>
           {route.name}
         </Link>
       ))}

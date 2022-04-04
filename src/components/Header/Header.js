@@ -7,7 +7,7 @@ import Navbar from "../Navbar/Navbar";
 
 const Header = () => {
   return (
-    <div className="header bg-[#F3F4F5] w-auto border-b-2 flex justify-center border-gray-300 sticky top-0">
+    <div className="header bg-white w-auto border-b-2 flex justify-center border-gray-300 sticky top-0">
       <div className="flex justify-between container my-2 p-4">
         <div>
           <h2 className="text-3xl font-medium">
