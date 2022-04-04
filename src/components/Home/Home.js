@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import useReviews from "../../hooks/useReviews";
 import Card from "../Card/Card";
 import "./Home.css";
@@ -6,6 +7,13 @@ import "./Home.css";
 const Home = () => {
   const [reviews, setreviews] = useReviews();
   const featuredReviews = reviews.slice(0, 3);
+
+  const navigate = useNavigate();
+
+  const showAllReviews = () => {
+    const path = `/reviews`;
+    navigate(path);
+  };
 
   return (
     <div className="container mx-auto">
@@ -38,8 +46,16 @@ const Home = () => {
       <div className=" my-10 p-4">
         <div className="justify-center my-10">
           <h1 className="my-4 text-4xl font-bold text-center">User Reviews</h1>
-          <div className="my-10 grid grid-cols-3 gap-6"></div>
-          <button className="mt-3 px-3 py-2 rounded-md bg-[#00cba9] text-white font-medium">
+
+          <div className="my-10 grid grid-cols-3 gap-6">
+            {featuredReviews.map((review) => (
+              <Card key={review.id} review={review}></Card>
+            ))}
+          </div>
+          <button
+            onClick={showAllReviews}
+            className="mt-3 px-3 py-2 rounded-md bg-[#00cba9] text-white font-medium"
+          >
             See All Reviews
           </button>
         </div>
