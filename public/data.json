@@ -29,7 +29,7 @@
        "investment":500000,
        "sell":529,
        "production":1000,
-       "revenue":40405
+       "revenue":50405
     },
     {
        "id":5,
@@ -37,7 +37,7 @@
        "investment":600000,
        "sell":601,
        "production":800,
-       "revenue":50900
+       "revenue":90900
     },
     {
        "id":6,
@@ -45,6 +45,6 @@
        "investment":700000,
        "sell":670,
        "production":1000,
-       "revenue":61000
+       "revenue":151000
     }
  ]

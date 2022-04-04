@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import useReviews from "../../hooks/useReviews";
 import Card from "../Card/Card";
 
@@ -7,8 +7,8 @@ const Reviews = () => {
   const [reviews, setreviews] = useReviews();
 
   return (
-    <div className="container mx-auto py-8 p-4">
-      <h1 className="mb-10 text-4xl font-bold text-center">
+    <div className="container mx-auto py-10 p-4">
+      <h1 className="mb-10 text-5xl font-medium text-center">
         All Reviews from Users
       </h1>
       <div className="grid grid-cols-3 gap-6">

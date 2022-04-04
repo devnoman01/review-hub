@@ -19,19 +19,20 @@ const StackedAreaCharts = ({ data }) => {
         <YAxis />
         <Tooltip />
         <Legend />
+
         <Area
           type="monotone"
-          dataKey="sell"
+          dataKey="revenue"
           stackId="1"
-          stroke="#82ca9d"
-          fill="#82ca9d"
+          stroke="#ffc658"
+          fill="#ffc658"
         />
         <Area
           type="monotone"
-          dataKey="production"
+          dataKey="investment"
           stackId="1"
-          stroke="#8884d8"
-          fill="#8884d8"
+          stroke="#82ca9d"
+          fill="#82ca9d"
         />
       </AreaChart>
     </div>

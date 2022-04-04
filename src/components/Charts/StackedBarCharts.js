@@ -19,8 +19,8 @@ const StackedBarCharts = ({ data }) => {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey="production" stackId="a" fill="#82ca9d" />
-        <Bar dataKey="sell" stackId="a" fill="#8884d8" />
+        <Bar dataKey="investment" stackId="a" fill="#82ca9d" />
+        <Bar dataKey="revenue" stackId="a" fill="#8884d8" />
       </BarChart>
     </div>
   );

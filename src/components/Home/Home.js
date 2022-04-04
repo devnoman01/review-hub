@@ -21,7 +21,7 @@ const Home = () => {
       <div className="my-10 p-4 grid grid-cols-1 md:grid-cols-2 justify-evenly align-middle">
         <div className="px-5 my-auto text-left">
           <h1 className="text-6xl font-bold text-left">
-            Edifier Wireless{" "}
+            Stylish Wireless{" "}
             <span className="text-[#00cba9]">Bluetooth Headphone</span>
           </h1>
           <p className="text-xl mx-auto my-5 font-medium">

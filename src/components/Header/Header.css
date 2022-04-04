@@ -3,3 +3,7 @@
     /* border-bottom: 1px solid darkgray; */
     z-index: 999;
 }
+
+.logo{
+    cursor: pointer;
+}
