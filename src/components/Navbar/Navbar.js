@@ -16,10 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className="my-auto text-xl font-medium">
-      <div className="w-8 h-8 md:hidden">
-        <MenuIcon />
-      </div>
-      <div className="md:flex justify-center">
+      <div className="flex justify-center">
         {routes.map((route) => (
           <CustomLink key={route.id} route={route}></CustomLink>
           // <Link

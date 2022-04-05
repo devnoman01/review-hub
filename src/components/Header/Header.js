@@ -15,11 +15,11 @@ const Header = () => {
 
   return (
     <div className="z-50 bg-white w-auto border-b-2 flex justify-center border-gray-200 sticky top-0">
-      <div className="flex justify-between container my-2 p-4">
+      <div className="flex justify-between align-center container my-2 p-4">
         <div>
           <h2
             onClick={homePage}
-            className="logo text-[#00cba9] text-3xl font-medium cursor-pointer"
+            className="logo text-[#00cba9] text-3xl font-bold cursor-pointer"
           >
             <FontAwesomeIcon className="text-3xl" icon={faHeadphonesAlt} />{" "}
             Review Hub

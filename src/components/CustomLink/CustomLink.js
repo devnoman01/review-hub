@@ -7,7 +7,7 @@ const CustomLink = (props) => {
   let match = useMatch({ path: resolved.pathname, end: true });
 
   return (
-    <li className="mx-3 py-2 font-medium list-none md:block text-right">
+    <li className="mx-3 my-auto font-medium list-none">
       <Link
         className="pb-2"
         style={{
