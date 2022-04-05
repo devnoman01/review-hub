@@ -31,7 +31,7 @@ const Home = () => {
               makes it the best choice.
             </p>
             <button className="mt-3 px-5 py-2 rounded-md bg-[#00cba9] text-white font-medium">
-              Buy Now
+              Live Demo
             </button>
           </div>
           <div className="px-3 my-auto justify-center">
