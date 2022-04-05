@@ -14,10 +14,13 @@ const Header = () => {
   };
 
   return (
-    <div className="header bg-white w-auto border-b-2 flex justify-center border-gray-300 sticky top-0">
+    <div className="z-50 bg-white w-auto border-b-2 flex justify-center border-gray-200 sticky top-0">
       <div className="flex justify-between container my-2 p-4">
         <div>
-          <h2 onClick={homePage} className="logo text-3xl font-medium">
+          <h2
+            onClick={homePage}
+            className="logo text-[#00cba9] text-3xl font-medium cursor-pointer"
+          >
             <FontAwesomeIcon className="text-3xl" icon={faHeadphonesAlt} />{" "}
             Review Hub
           </h2>
