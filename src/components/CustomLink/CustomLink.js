@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 const CustomLink = (props) => {
+  // destructuring values
   const { name, link } = props.route;
   let resolved = useResolvedPath(link);
   let match = useMatch({ path: resolved.pathname, end: true });

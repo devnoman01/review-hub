@@ -5,6 +5,8 @@ const Blogs = () => {
     <div className="container mx-auto p-4">
       <h1 className="my-10 text-5xl font-medium text-center">Popular Blogs</h1>
       <div className="text-gray-800">
+        {/* article - 1 */}
+
         <article className="p-5 my-10 mx-auto bg-[#EBFAEF] border-2 border-green-100 rounded-md shadow-lg">
           <h2 className="mt-3 text-3xl font-medium">
             What is Context API? Purpose of Context API?
@@ -22,6 +24,9 @@ const Blogs = () => {
             nesting levels.
           </p>
         </article>
+
+        {/* article - 2 */}
+
         <article className="p-5 my-10 mx-auto bg-[#EBFAEF] border-2 border-green-100 rounded-md shadow-lg">
           <h2 className="mt-3 text-3xl font-medium">What is semantic tag?</h2>
           <p className="text-justify text-lg font-normal my-5">
@@ -42,6 +47,9 @@ const Blogs = () => {
             sections.
           </p>
         </article>
+
+        {/* article - 3 */}
+
         <article className="p-5 my-10 mx-auto bg-[#EBFAEF] border-2 border-green-100 rounded-md shadow-lg">
           <h2 className="mt-3 mb-6 text-3xl font-medium">
             Differences among inline - block - inline-block?

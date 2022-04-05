@@ -12,6 +12,8 @@ const About = () => {
       </p>
       <div className="my-5 text-gray-800">
         <article className="p-5 my-10 mx-auto bg-[#EBFAEF] border-2 border-green-100 rounded-md shadow-lg">
+          {/* mission and vision article */}
+
           <h2 className="mt-3 text-3xl font-medium">Our Mission and Vision</h2>
           <p className="text-justify text-lg font-normal my-5">
             We, Review Hub community started our journey with the mission to
@@ -25,6 +27,7 @@ const About = () => {
           </p>
         </article>
 
+        {/* Privacy Practices article */}
         <article className="p-5 my-10 mx-auto bg-[#EBFAEF] border-2 border-green-100 rounded-md shadow-lg">
           <h2 className="mt-3 text-3xl font-medium">Privacy Practices</h2>
           <p className="text-justify text-lg font-normal my-5">

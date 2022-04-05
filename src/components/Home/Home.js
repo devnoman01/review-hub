@@ -5,11 +5,10 @@ import Card from "../Card/Card";
 import "./Home.css";
 
 const Home = () => {
+  // destructuring values from custom hook
   const [reviews, setreviews] = useReviews();
   const featuredReviews = reviews.slice(0, 3);
-
   const navigate = useNavigate();
-
   const showAllReviews = () => {
     const path = `/reviews`;
     navigate(path);

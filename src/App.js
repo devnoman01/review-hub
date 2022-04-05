@@ -11,7 +11,10 @@ import Reviews from "./components/Reviews/Reviews";
 function App() {
   return (
     <div className="App">
+      {/* header part */}
       <Header></Header>
+
+      {/* using routes */}
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>

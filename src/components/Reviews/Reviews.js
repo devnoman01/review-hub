@@ -3,7 +3,7 @@ import useReviews from "../../hooks/useReviews";
 import Card from "../Card/Card";
 
 const Reviews = () => {
-  // using useReviews custom hook
+  // destructuring values from useReviews custom hook
   const [reviews, setreviews] = useReviews();
 
   return (
@@ -12,6 +12,7 @@ const Reviews = () => {
         All Reviews from Users
       </h1>
       <div className="grid grid-cols-3 gap-6">
+        {/* loading review cards */}
         {reviews.map((review) => (
           <Card key={review.id} review={review}></Card>
         ))}
